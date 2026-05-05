@@ -6,6 +6,6 @@
 
     <groupId>fr.eql.autom13.maven.chess</groupId>
     <artifactId>MavenChess</artifactId>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
 
 </project>

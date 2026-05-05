@@ -45,9 +45,9 @@ public class chessRule {
             }
 
             int x1 = start.charAt(0) - 'a';
-            int y1 = TAILLE - (start.charAt(1) - '0');
+            int y1 = SIZE - (start.charAt(1) - '0');
             int x2 = finish.charAt(0) - 'a';
-            int y2 = TAILLE - (finish.charAt(1) - '0');
+            int y2 = SIZE - (finish.charAt(1) - '0');
 
             char piece = chessBoard[y1][x1];
             if (piece == ' ') {
@@ -84,7 +84,7 @@ public class chessRule {
         chessBoard[0][5] = 'f';
         chessBoard[0][6] = 'c';
         chessBoard[0][7] = 't';
-        for (int i = 0; i < TAILLE; i++) {
+        for (int i = 0; i < SIZE; i++) {
             chessBoard[1][i] = 'p';
         }
 
@@ -97,13 +97,13 @@ public class chessRule {
         chessBoard[7][5] = 'F';
         chessBoard[7][6] = 'C';
         chessBoard[7][7] = 'T';
-        for (int i = 0; i < TAILLE; i++) {
+        for (int i = 0; i < SIZE; i++) {
             chessBoard[6][i] = 'P';
         }
 
         // Cases vides
         for (int i = 2; i < 6; i++) {
-            for (int j = 0; j < TAILLE; j++) {
+            for (int j = 0; j < SIZE; j++) {
                 chessBoard[i][j] = ' ';
             }
         }
